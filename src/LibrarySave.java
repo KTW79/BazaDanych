@@ -19,8 +19,10 @@ public class LibrarySave {
             book.setAuthor(scan.nextLine());
             System.out.println("Podaj rok wydania:");
             book.setYear(scan.nextInt());
+            scan.nextLine();
             System.out.println("ISBN książki:");
             book.setIsbn(scan.nextLine());
+
 
         BookDao dao = new BookDao();
         dao.save(book);
